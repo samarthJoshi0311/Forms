@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .sam{
+            border-radius: 10px;
+            background: url(background-free-vector.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 980px;
+        }
+        .main 
+        {
+            height: 700px;
+        }
+        .main .nav 
+        {
+            display: flex;
+            height: 80px;
+        }
+        .main .nav .part 
+        {
+            width: 50%;
+        }
+        .part2{
+            font-size:25px;
+        }
+        .fa-globe
+        {
+            font-size: 25px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .part{
+
+            margin-top: 0px;
+            margin-left: 360px;
+        }
+        span 
+        {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .main .nav .part ul
+        {
+            margin-left: 10px;
+        } 
+        .main .nav .part ul li 
+        {
+            list-style: none;
+            display: inline;
+            margin-left: 40px;
+        } 
+        .main .nav .part ul li a 
+        {
+            text-decoration: none;
+        }
+        .s
+        {
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 10px 30px;
+        }
+        .header 
+        {
+            height: 600px;
+        }
+        .header .content 
+        {
+            display: flex;
+            height: 600px;
+        }
+        .header .content .sa
+        {
+            width: 45%;
+        }
+        .card{
+            height: 250px;
+            width: 380px;
+            position: relative;
+            top: 90px;
+            right: -90px;
+            border: 1px solid rgb(90,88,88);
+            background: transparent;
+            border-radius: 10px;
+            word-spacing: 2px;
+            backdrop-filter: blur(8px);
+            color: darkgray;
+            transform: rotate(20deg);
+            z-index: 1;
+        }
+        .icon{
+            position: absolute;
+            font-size: 25px;
+            top: 10px;
+            left: 10px;
+        }
+        .visa{
+            position: absolute;
+            top: 7px;
+            left: 330px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .no{
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            font-size: 25px;
+        }
+        .na{
+            position: absolute;
+            top: 190px;
+            left: 10px;
+            font-size: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .me{
+            position: absolute;
+            top: 210px;
+            left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .da{
+            position: absolute;
+            top: 190px;
+            left: 290px;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .te{
+            position: absolute;
+            top: 207px;
+            left: 300px;
+        }
+        .card1{
+            height: 230px;
+            width: 350px;
+            position: relative;
+            top: -15px;
+            left: 80px;
+            border: 1px solid rgb(49, 48, 48);
+            background: transparent;
+            border-radius: 10px;
+            word-spacing: 2px;
+            backdrop-filter: blur(25px);
+            color: darkgray;
+            transform: rotate(-20deg);
+            z-index: 0;
+        }
+        .pay{
+            height: 300px;
+            width:100%;
+            margin-top: 100px;
+        }
+        span{
+            font-size: 15px;
+            color: green;
+        }
+        .para{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .header .content .ma 
+        {
+            width: 55%;
+        }
+        .pay{
+
+            height: 600px;
+            /* border: 1px solid red; */
+            width:100%;
+            margin-top: 10px;
+        }
+        span{
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: green;
+        }
+        .para{
+            margin-left: 10px;
+            font-size: 45px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1{
+            margin-left: 10px;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn{
+             border-radius: 35px;
+            display: inline-block;
+            /* margin: 200px 150px; */
+            padding: 20px;
+            background: darkblue;
+            color: white;
+            position: relative;
+            top: -175px;
+            left: 10px;
+
+        }
+
+        .btn::after{
+            border-radius: 35px;
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            border: 2px solid darkblue;
+            transition: .2s;
+        }
+
+        .btn:hover::after{
+            top:-5px;
+            right:-5px;
+            bottom:-5px;
+            left:-5px;
+            border: 3px solid darkblue;
+        }
+        .s2
+       {
+        color: black;
+        transform: translate(150px,-210px);
+        font-size: 12px;
+        font-weight: bold;
+       }
+        .s3
+       {
+        color: black;
+        transform: translate(40px,-120px);
+        font-size: 14px;
+       }
+    </style>
+</head>
+<body>
+    <div class="sam">
+    <div class="main">
+        <div class="nav">
+            <div class="part2"><i class="fa fa-globe"></i> Cashfly </div>
+            <div class="part">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Pricing</a></li>
+               
+                <li><a class="s" href="" type="button">Sign Up</a></li>
+
+                </ul>
+            </div>
+            </div>
+            <!-- NAv End  -->
+            <!-- MAin Section Start  -->
+            <div class="header">
+                <div class="content">
+                    <div class="part1 sa">
+                        <div class="pay">
+                            <span> START SAVING YOUR MONEY </span>
+                           <p class="para">Payments <br> have never <br> been Easier</p>
+                            <h1> Discover the easiest way to manage your personal finances. Save,analyse,invest,withdrow,send and receive money all over wrold with no limits! </h1>
+                        </div>
+                            <div class="container"> <a href="" class="btn"> Get Started </a>
+                            </div>
+                            <div class="s2"> <a href="">Download App <i class="fa fa-download" aria-hidden="true"></i></a></div>
+                          <div class="s3"> Learn more about digital banking <a href="">hear</a>
+                   </div>
+                    </div>
+                    <div class="part1 ma">
+                        <div class="card">
+                            <div class="icon"> <i class="fa fa-credit-card"></i> </div>
+                            <div class="visa"> VISA </div>
+                            <div class="no"> 3516 8643 7614 9442 </div>
+                            <div class="na"> CARD HOLDER</div>
+                            <div class="me"> Joshua Cash </div>
+                            <div class="da"> EXPIRES </div>
+                            <div class="te"> 11/27 </div>
+                        </div>
+                        <div class="card1">
+                            <div class="icon"> <i class="fa fa-credit-card"></i> </div>
+                            <div class="visa"> VISA </div>
+                            <div class="no"> 5136 7541 0877 0029 </div>
+                            <div class="na"> CARD HOLDER</div>
+                            <div class="me"> sarah gold </div>
+                            <div class="da"> EXPIRES </div>
+                            <div class="te"> 09/24 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

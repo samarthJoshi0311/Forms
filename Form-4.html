@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Form </title>
+
+    <style>
+        body{
+            /* height: 600px; */
+            /* width: 700px; */
+            background-image: url(grunge-watercolor.avif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+            background-size: 900px 600px;
+            padding-left:60px ;
+            margin-top: 60px;
+
+  
+        }
+
+        .A{
+            background: transparent;
+            border: 1px solid white;
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+
+        }
+        table{
+            padding: 10px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form>
+        <h1> Contact Form </h1>
+        <p> Please fill in your information and we'll be sending your order in no time. </p>
+        <tr>
+            <td> Your Name </td>
+            <td><input type="text"  placeholder="first name"></td></br>
+            <td><input type="text"  placeholder="Last name" size="19"></td>
+        </tr>
+        <tr>
+            <td> Your Email </td>
+            <td colspan="3"><input type="email" placeholder="e.g.hello@contact.net" size="64"></td>
+        </tr>
+        <tr>
+            <td> Phone* </td>
+            <td><input type="text" placeholder="###" size="15"></td>
+            <td><input type="text" placeholder="###" size="15"></td>
+            <td><input type="text" placeholder="###" size="15"></td>
+        </tr>
+        <tr>
+            <td> Message Subject* </td>
+            <td><select aria-placeholder="Other">
+                <option hidden> Other </option>
+                <option> Aadhar card </option>
+                <option> Pan card </option>
+              </select></td>
+        </tr>
+        <tr>
+            <td> Message*</td>
+            <td colspan="3"> <textarea cols="60" rows="8"></textarea></td>
+        </tr>
+        <tr>
+            <td>Verification*</td>
+            <td bgcolor="white"><input type="checkbox"> I'm not a robot</td>
+        </tr>
+        <tr><td colspan="4">----------------------------------------------------------------------------------------------------------</td></tr>
+
+        <tr><td colspan="2" ><input type="button" value="Submit Form" class="A"></td></tr>
+    </table>
+    </form>
+</body>
+</html>
